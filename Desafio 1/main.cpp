@@ -1,5 +1,5 @@
 /*
-Este código visa poder informar se determinado ano informado pelo usuário é bissexto ou não.
+Este código visa informar se determinado ano informado pelo usuário é bissexto ou não.
 */
 
 #include <iostream>
