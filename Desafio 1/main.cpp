@@ -1,28 +1,27 @@
 /*
-Este cÛdigo visa poder informar se determinado ano
-informado pelo usu·rio È um ano bissexto ou n„o.
+Este c√≥digo visa poder informar se determinado ano informado pelo usu√°rio √© um ano bissexto ou n√£o.
 */
 
 #include <iostream>
 
 using namespace std;
 
-// EnumeraÁ„o para simplificar a visualizaÁ„o do retorno da funÁ„o.
+// Enumera√ß√£o para simplificar a visualiza√ß√£o do retorno da fun√ß√£o.
 enum bissextos{NAO=0, SIM};
 
-// PrototipaÁ„o da funÁ„o que realiza a verificaÁ„o de ano bissextos.
+// Prototipa√ß√£o da fun√ß√£o que realiza a verifica√ß√£o de ano bissextos.
 bissextos verifica_ano_bissexto(int ano);
 
 int main()
 {
-    // DeclaraÁ„o da vari·vel "ano", para armazenar o ano informado pelo usu·rio.
+    // Declara√ß√£o da vari√°vel "ano", para armazenar o ano informado pelo usu√°rio.
     int ano;
 
-    // Usu·rio informa o ano a ser verificado pela funÁ„o.
+    // Usu√°rio informa o ano a ser verificado pela fun√ß√£o.
     cout << "Digite o ano: " << endl;
     cin >> ano;
 
-    // VerificaÁ„o do retorno da funÁ„o.
+    // Verifica√ß√£o do retorno da fun√ß√£o.
     if (verifica_ano_bissexto(ano) == SIM) {
         cout << "Ano " << ano << ": Bissexto";
     }
@@ -34,13 +33,13 @@ int main()
 }
 
 bissextos verifica_ano_bissexto(int ano) {
-    // Verifica se o ano for divisÌvel por 4.
+    // Verifica se o ano for divis√≠vel por 4.
     if ((ano%4) == 0) {
-        // Verifica se o ano tambÈm È divisÌvel por 400.
+        // Verifica se o ano tamb√©m √© divis√≠vel por 400.
         if ((ano%400) == 0) {
             return SIM;
         }
-        // Verifica se o ano È divisÌvel, se n„o for por 400, por 100.
+        // Verifica se o ano √© divis√≠vel, se n√£o for por 400, por 100.
         if ((ano%100) == 0) {
             return NAO;
         }
