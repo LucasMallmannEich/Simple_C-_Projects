@@ -36,7 +36,7 @@ int main()
 
     // Se o arquivo não for encontrado/aberto, o programa informará ao usuário.
     if (! leitura) {
-        cerr << "Arquivo " << arq << " nao pode ser aberto." << endl;
+        cerr << "Arquivo " << arq << " não pode ser aberto." << endl;
         return -1;
      }
 
