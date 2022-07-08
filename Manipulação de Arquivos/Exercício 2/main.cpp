@@ -29,7 +29,7 @@ int main()
 
     // Se o arquivo não for encontrado/aberto, o programa informará ao usuário.
     if (! leitura) {
-        cerr << "Arquivo bolo_de_banana.txt nao pode ser aberto." << endl;
+        cerr << "Arquivo bolo_de_banana.txt não pode ser aberto." << endl;
         return -1;
      }
 
