@@ -1,8 +1,8 @@
 /*
 Abra um arquivo no formato txt contendo um texto.
-O nome do arquivo é fixo no código.
-Analise o conteúdo e gere o seguinte relatório (na tela):
-    - Quantidade de caracteres "espaço";
+O nome do arquivo Ã© fixo no cÃ³digo.
+Analise o conteÃºdo e gere o seguinte relatÃ³rio (na tela):
+    - Quantidade de caracteres "espaÃ§o";
     - Quantidade de linhas do texto;
     - Quantidade de vogais;
     - Quantidade de artigos definidos.
@@ -21,50 +21,50 @@ int main()
 {
     setlocale(LC_ALL,"");
 
-    // Cria um objeto que lê informações do arquivo de texto.
+    // Cria um objeto que lÃª informaÃ§Ãµes do arquivo de texto.
     ifstream leitura;
 
     // Abre o arquivo de texto no modo de leitura.
     leitura.open("bolo_de_banana.txt", ios::in);
 
-    // Se o arquivo não for encontrado/aberto, o programa informará ao usuário.
+    // Se o arquivo nÃ£o for encontrado/aberto, o programa informarÃ¡ ao usuÃ¡rio.
     if (! leitura) {
         cerr << "Arquivo bolo_de_banana.txt nao pode ser aberto." << endl;
         return -1;
      }
 
-    // Declara uma variável do tipo char (caractere).
+    // Declara uma variÃ¡vel do tipo char (caractere).
     char caractere;
 
-    // Declara e inicializa uma variável cuja função é contar o número de espaços.
+    // Declara e inicializa uma variÃ¡vel cuja funÃ§Ã£o Ã© contar o nÃºmero de espaÃ§os.
     int num_espacos = 0;
 
-    // Declara e inicializa uma variável cuja função é contar o número de linhas.
-    // Começa com 1, pois estou contando o número de "\n" (não tem na última linha).
+    // Declara e inicializa uma variÃ¡vel cuja funÃ§Ã£o Ã© contar o nÃºmero de linhas.
+    // ComeÃ§a com 1, pois estou contando o nÃºmero de "\n" (nÃ£o tem na Ãºltima linha).
     int num_linhas = 1;
 
-    // Declara e inicializa uma variável cuja função é contar o número de vogais.
+    // Declara e inicializa uma variÃ¡vel cuja funÃ§Ã£o Ã© contar o nÃºmero de vogais.
     int num_vogais = 0;
 
-    // Vetor de caracteres que contém as vogais.
+    // Vetor de caracteres que contÃ©m as vogais.
     char vogais[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U',
-    'á', 'é', 'í', 'ó', 'ú', 'Á', 'É', 'Í', 'Ó', 'Ú',
-    'â', 'ê', 'î', 'ô', 'û', 'Â', 'Ê', 'Î', 'Ô', 'Û',
-    'ã', 'õ', 'Ã', 'Õ', 'à', 'À'};
+    'Ã¡', 'Ã©', 'Ã­', 'Ã³', 'Ãº', 'Ã', 'Ã‰', 'Ã', 'Ã“', 'Ãš',
+    'Ã¢', 'Ãª', 'Ã®', 'Ã´', 'Ã»', 'Ã‚', 'ÃŠ', 'ÃŽ', 'Ã”', 'Ã›',
+    'Ã£', 'Ãµ', 'Ãƒ', 'Ã•', 'Ã ', 'Ã€'};
 
-    // Utiliza o método "get" no objeto "leitura".
-    // Isso irá captar cada caractere do arquivo até ele se encerrar.
-    // Ele irá pegar apenas um caractere por vez, pois o tipo da variável "caractere" é "char".
+    // Utiliza o mÃ©todo "get" no objeto "leitura".
+    // Isso irÃ¡ captar cada caractere do arquivo atÃ© ele se encerrar.
+    // Ele irÃ¡ pegar apenas um caractere por vez, pois o tipo da variÃ¡vel "caractere" Ã© "char".
     while (leitura.get(caractere)) {
-        // Se o caractere do arquivo for um espaço (" "), o contador é acrescentado.
+        // Se o caractere do arquivo for um espaÃ§o (" "), o contador Ã© acrescentado.
         if (caractere == ' ') {
             num_espacos++;
         }
-        // Se o caractere for uma quebra de linha, o contador é acrescentado.
+        // Se o caractere for uma quebra de linha, o contador Ã© acrescentado.
         if (caractere == '\n') {
             num_linhas++;
         }
-        // Um laço de repetição irá verificar se o caractere é uma vogal (se sim, incrementa o contador).
+        // Um laÃ§o de repetiÃ§Ã£o irÃ¡ verificar se o caractere Ã© uma vogal (se sim, incrementa o contador).
         for (int i=0; i<sizeof(vogais); i++) {
             if (caractere == vogais[i]) {
                 num_vogais++;
@@ -72,14 +72,14 @@ int main()
         }
     }
 
-    // Imprime o número de espaços.
-    cout << "Número de espaços: " << num_espacos << endl;
+    // Imprime o nÃºmero de espaÃ§os.
+    cout << "NÃºmero de espaÃ§os: " << num_espacos << endl;
 
-    // Imprime o número de linhas.
-    cout << "Número de linhas: " << num_linhas << endl;
+    // Imprime o nÃºmero de linhas.
+    cout << "NÃºmero de linhas: " << num_linhas << endl;
 
-    // Imprime o número de vogais.
-    cout << "Número de vogais: " << num_vogais << endl;
+    // Imprime o nÃºmero de vogais.
+    cout << "NÃºmero de vogais: " << num_vogais << endl;
 
     // Fecha o arquivo.
     leitura.close();
@@ -87,34 +87,34 @@ int main()
     // Abre o arquivo de texto novamente no modo de leitura, pois o cursor chegou ao fim do arquivo anteriormente.
     leitura.open("bolo_de_banana.txt", ios::in);
 
-    // Se o arquivo não for encontrado/aberto, o programa informará ao usuário.
+    // Se o arquivo nÃ£o for encontrado/aberto, o programa informarÃ¡ ao usuÃ¡rio.
     if (! leitura) {
         cerr << "Arquivo bolo_de_banana.txt nao pode ser aberto." << endl;
         return -1;
      }
 
-    // Vetor de strings que contém os artigos definidos.
+    // Vetor de strings que contÃ©m os artigos definidos.
     string artigos_def[] = {"a", "o", "as", "os", "A", "O", "AS", "OS", "As", "Os"};
 
-    // Declaração da variável que irá captar as palavras do arquivo.
+    // DeclaraÃ§Ã£o da variÃ¡vel que irÃ¡ captar as palavras do arquivo.
     string palavra;
 
-    // Declaração e incialização da variável que armazena o número de artigos definidos no arquivo.
+    // DeclaraÃ§Ã£o e incializaÃ§Ã£o da variÃ¡vel que armazena o nÃºmero de artigos definidos no arquivo.
     int num_artigos_def = 0;
 
-    // Laço de repetição que se encerra quando todas as palavras do texto já tiverem sido passadas,
-    // uma por vez, para a variável "palavra" (do tipo "string").
+    // LaÃ§o de repetiÃ§Ã£o que se encerra quando todas as palavras do texto jÃ¡ tiverem sido passadas,
+    // uma por vez, para a variÃ¡vel "palavra" (do tipo "string").
     while(leitura >> palavra) {
         for (int i=0; i < (sizeof(artigos_def)/sizeof(string)); i++) {
-            // Caso a palavra esteja no vetor dos artigos definidos, o contador é acrescentado.
+            // Caso a palavra esteja no vetor dos artigos definidos, o contador Ã© acrescentado.
             if (palavra == artigos_def[i]) {
                 num_artigos_def++;
             }
         }
     }
 
-    // Imprime o número de artigos definidos.
-    cout << "Numero de artigos definidos: " << num_artigos_def;
+    // Imprime o nÃºmero de artigos definidos.
+    cout << "NÃºmero de artigos definidos: " << num_artigos_def;
 
     leitura.close();
 
