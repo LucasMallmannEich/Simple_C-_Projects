@@ -1,0 +1,6 @@
+#ifndef DIODO_HPP_INCLUDED
+#define DIODO_HPP_INCLUDED
+
+
+
+#endif // DIODO_HPP_INCLUDED
