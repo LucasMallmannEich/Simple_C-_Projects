@@ -72,14 +72,17 @@ bool tabuleiro::num_bombas(int dific)
 {
     if(dific == 1) {
         numero_bombas = numero_quadradinhos/10;
+        dificuldade = 1;
         return true;
     }
-    if(dific == 1) {
+    if(dific == 2) {
         numero_bombas = numero_quadradinhos/7.5;
+        dificuldade = 2;
         return true;
     }
-    if(dific == 1) {
+    if(dific == 3) {
         numero_bombas = numero_quadradinhos/5;
+        dificuldade = 3;
         return true;
     }
     return false;
