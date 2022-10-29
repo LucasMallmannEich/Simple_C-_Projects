@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1667070680 source:c:\users\lucas\documents\campo_minado\main.cpp
+	<iostream>
+	<string>
+
+1667055456 source:c:\users\lucas\documents\campo_minado\bandeira.cpp
+	"bandeira.hpp"
+
+1667069055 c:\users\lucas\documents\campo_minado\bandeira.hpp
+
+1667069051 source:c:\users\lucas\documents\campo_minado\quadradinho.cpp
+	"quadradinho.hpp"
+
+1667069013 c:\users\lucas\documents\campo_minado\quadradinho.hpp
+
+1667057518 source:c:\users\lucas\documents\campo_minado\tabuleiro.cpp
+	"tabuleiro.hpp"
+	"quadradinho.hpp"
+	<string>
+
+1667057058 c:\users\lucas\documents\campo_minado\tabuleiro.hpp
+
+1667055566 source:c:\users\lucas\documents\campo_minado\bomba.cpp
+	<iostream>
+	"bomba.hpp"
+
+1666720089 c:\users\lucas\documents\campo_minado\bomba.hpp
+
