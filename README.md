@@ -1,4 +1,4 @@
 # Simple_C_Plus_Plus_Projects
 
-Repositório que contém meus códigos criados em C++.           
-Todos eles possuem um README.md explicando a proposta.
+Repositories that contains my codes creatdes in C++.
+All of them have a README.md explaining the purpose of the challenge.
