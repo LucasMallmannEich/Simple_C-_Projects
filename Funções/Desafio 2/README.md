@@ -16,4 +16,5 @@ Testando o programa:
 
 ![image](https://github.com/LucasMallmannEich/Simple_C_Plus_Plus_Projects/assets/89753549/4dd44dd9-06a3-4aef-a307-87f5d200173d)
 
-![image](https://github.com/LucasMallmannEich/Simple_C_Plus_Plus_Projects/assets/89753549/ab6fbd97-6ff5-45f1-b1ce-8c371ce87857)
+![image](https://github.com/LucasMallmannEich/Simple_C_Plus_Plus_Projects/assets/89753549/d9b898cb-e1a8-4773-8a2e-2821d5ad003a)
+
